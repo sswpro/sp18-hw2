@@ -7,6 +7,10 @@ class Stringify
   end
 
   def what_am_i
-  	# YOUR IMPLEMENTATION HERE
+  	if(@name == nil || @adjective == nil)
+  		return "You are nothing!"
+  	elsif(@name != nil and @adjective != nil)
+  		return @name + " is so " + @adjective
+  	end
   end
 end
